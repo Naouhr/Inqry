@@ -1,0 +1,224 @@
+/* Style général */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a; /* Fond sombre pour un effet grunge */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #c4b99c; /* Gris jaunâtre pour un bon contraste */
+}
+
+/* En-tête */
+#entete-de-page {
+    padding: 5px;
+    height: 100px;
+    background-image: url('tbc.jpg'); /* Remplacer par le chemin de ton image */
+    background-size: cover; /* Pour que l'image couvre toute la zone */
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #c4b99c;
+    border-bottom: 4px solid #c4b99c;
+}
+
+
+/* Menu de navigation */
+#bloc-menu {
+    height: 36px;
+    background-color: white;
+    color: white;
+}
+
+#bloc-menu th {
+    width: 200px;
+}
+
+#bloc-menu th a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#bloc-menu th a:hover {
+    color: #801f20;
+}
+
+/* Contenu principal */
+#contenu {
+    padding: 10px;
+    background-color: #801f20;
+    text-align: center;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    color: #c4b99c;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Conteneur des textes sous la première ligne d’images */
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Rectangles de texte */
+.text-box {
+    background-color: #c4b99c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Taille équilibrée */
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Positionnement des deux boîtes */
+.text-box-left {
+    text-align: left;
+}
+
+.text-box-right {
+    text-align: right;
+}
+
+/* Pied de page */
+#pied-de-page {
+    padding: 5px;
+    background-color: lightgrey;
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+/* Texte du contenu */
+#contenu p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#contenu span {
+    font-weight: bold;
+}
+
+/* Couleurs spécifiques */
+#contenu .naouhr {
+    color: #cb0f0f; /* Rouge bordeaux pour Naouhr */
+}
+
+#contenu .art {
+    color: #7a5f9b; /* Violet clair pour l'art */
+}
+
+#contenu .manga {
+    color: #2ecc71; /* Vert émeraude pour les mangas */
+}
+
+#contenu .psychologie {
+    color: #2980b9; /* Bleu profond pour la psychologie */
+}
+
+
+
+
+
+
+/* Styles spécifiques à la page "Les Grands Félins" */
+.page_5 #entete-de-page {
+    background-color: #f73b04;
+    padding: 15px;
+    text-align: center;
+}
+
+.page_5 header h1 {
+    color: #faa00b;
+    text-align: center;
+}
+
+.page_5 #bloc-menu {
+    background-color: #17416d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page_5 #bloc-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.page_5 #bloc-menu a:hover {
+    color: #0bf3fa;
+}
+
+.page_5 #bloc-menu a:visited {
+    color: #d96a09;
+}
+
+.page_5 main section {
+    margin: 20px;
+    background-color: #17416d;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.page_5 footer {
+    text-align: center;
+    background-color: #333333;
+    color: #e1e1e1;
+    padding: 10px;
+}
+
+.page_5 audio {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-DB {
+  width: 15%;         /* Ajuste la largeur de l'image, tu peux changer la valeur en fonction de tes besoins */
+  height: auto;       /* Maintient la proportion de l'image */
+  display: block;     /* Permet à l'image de se comporter comme un bloc */
+  margin: 0;          /* Supprime l'espacement autour de l'image */
+  float: left;        /* Aligne l'image à gauche */
+  margin-right: 20px; /* Ajoute un petit espace à droite de l'image (si tu veux que le texte ne soit pas collé) */
+}

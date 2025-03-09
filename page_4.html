@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container a {
+            text-decoration: none;
+        }
+        .image-container img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+  </head>
+  <body>
+
+   <!-- En-tête -->
+<div id="entete-de-page">
+  <p><span style="color: #c4b99c;">PORTFOLIO DE NAOUHR</span></p>
+</div>
+
+<style>
+  #entete-de-page {
+    background-image: url('pipi.jpg'); /* Ajoute les guillemets et le 'url' pour spécifier l'image */
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la zone */
+    background-position: center; /* Centre l'image dans l'élément */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+  }
+</style>
+
+
+    <!-- Menu -->
+    <table id="bloc-menu" border="1">
+      <tbody>
+        <tr>
+          <th><a href="index.html">Accueil</a></th>
+          <th><a href="page_1.html">Mes productions écrites</a></th>
+          <th><a href="page_2.html">Mes vidéos</a></th>
+          <th><a href="page_3.html">Mes sites préférés</a></th>
+          <th><a href="page_4.html">Mes passions</a></th>
+          <th><a href="page_5.html">Mon site de rêve</a></th>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+    <!-- Contenu -->
+    <div id="contenu">
+        <h1 style="font-size: 35px; color: #c4b99c; text-align: center; text-decoration: underline;">Mes Passions</h1>
+        <h2 style="text-align: center;">Cliquer sur une image pour en savoir plus</h2>
+
+        <div class="image-container">
+            <a href="page_vivienne_westwood.html">
+                <img src="vivienne-westwood.jpg" alt="Vivienne Westwood">
+            </a>
+            <a href="page_art.html">
+                <img src="Art.jfif" alt="Art">
+            </a>
+            <a href="page_musiques.html">
+                <img src="musique1.webp" alt="Musiques">
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+      <!-- Pied de page -->
+<div id="pied-de-page" style="background-color: #333333; padding: 10px; color: #e1e1e1; font-family: 'Roboto', sans-serif; font-size: 14px; text-align: center;">
+      <p>
+        Projet SNT - Dernière mise à jour le : 08/03/2025 <br>
+        Les textes et images utilisés n'engagent que son auteur : Naouhr
+      </p>
+    </div>
+
+
+  </body>
+</html>

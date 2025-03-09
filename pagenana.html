@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        /* Conteneur principal qui contient les deux rectangles (DB et SM) */
+        .main-container {
+            display: flex; /* Afficher les éléments en ligne */
+            justify-content: flex-start; /* Par défaut, les éléments seront alignés à gauche */
+            gap: 1cm; /* Espace entre les deux rectangles */
+        }
+
+        /* Conteneur principal pour l'image et le texte de DB */
+        .image-text-container {
+            display: flex;
+            flex-direction: column; /* Disposer les éléments en colonne */
+            align-items: center; /* Centrer horizontalement l'image et le texte */
+            gap: 0.5cm; /* Espace de 0,5 cm entre l'image et le texte */
+            background-color: #801f20; /* Fond du rectangle */
+            padding: 20px; /* Espace autour du contenu */
+            border-radius: 10px; /* Coins arrondis du rectangle */
+            max-width: 400px; /* Limite la largeur du conteneur */
+        }
+
+        /* Style de l'image */
+        .image-DB {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        /* Conteneur principal pour l'image et le texte de SM (aligné à droite) */
+        .image-text-container-sm {
+            display: flex;
+            flex-direction: column; /* Disposer les éléments en colonne */
+            align-items: center; /* Centrer horizontalement l'image et le texte à l'intérieur du conteneur */
+            gap: 0.5cm; /* Espace de 0,5 cm entre l'image et le texte */
+            background-color: #801f20; /* Fond du rectangle */
+            padding: 20px; /* Espace autour du contenu */
+            border-radius: 10px; /* Coins arrondis du rectangle */
+            max-width: 400px; /* Limite la largeur du conteneur */
+            margin-left: auto; /* Aligner le conteneur à droite */
+        }
+
+        /* Style de l'image */
+        .image-SM {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        /* Centrer le titre */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Style du texte à côté de l'image */
+        .text-content {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center; /* Centrer le texte sous l'image */
+            max-width: 500px; /* Limite la largeur du texte */
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Contenu principal -->
+    <main>
+      <section>
+        <h2 class="section-title">🌀L’Ère de la Transition : Entre Tradition et Modernité</h2>
+        
+        <!-- Conteneur pour les rectangles DB et SM alignés côte à côte -->
+        <div class="main-container">
+            <!-- Rectangle NRT (à gauche) -->
+            <div class="image-text-container">
+                <img src="Naruto.jfif" alt="DB" class="image-DB">
+                <p class="text-content">Les années 2000 marquent une transition entre tradition et modernité, avec des personnages aux designs plus dynamiques et détaillés.</p>
+            </div>
+
+            <!-- Rectangle NANA (aligné à droite) -->
+            <div class="image-text-container-sm">
+                <img src="NANA.jfif" alt="SM" class="image-SM">
+                <p class="text-content">Entre 2000 et 2010, l'animation japonaise connaît une transformation majeure, fusionnant les codes traditionnels du dessin avec les avancées technologiques naissantes. Les personnages adoptent des traits plus nets et détaillés, tout en conservant une expressivité marquée.</p>
+            </div>
+        </div>
+      </section>
+    </main>
+ 
+
+<br>
+
+
+
+
+
+      <!-- Bouton retour vers "Mes Passions" -->
+      <a href="page_5.html" class="back-button" style="color: #801f20" >Retour à Mon site de rêve</a>
+
+      <!-- Pied de page -->
+      <div id="pied-de-page" style="background-color: #333333; padding: 10px; color: #e1e1e1; font-family: 'Roboto', sans-serif; font-size: 14px; text-align: center;">
+        <p>
+          Projet SNT - Dernière mise à jour le : 08/03/2025 <br>
+          Les textes et images utilisés n'engagent que son auteur : Naouhr
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

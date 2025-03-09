@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title> Portefolio de Naouhr </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	
+                                                      <!-- attention revenir ici-->
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<!-- pareil-->
+  </head>
+  <body>
+
+    <!-- En-tête -->
+<div id="entete-de-page">
+  <p><span style="color: #c4b99c;">PORTFOLIO DE NAOUHR</span></p>
+</div>
+
+<style>
+  #entete-de-page {
+    background-image: url('tbc.jpg'); /* Ajoute les guillemets et le 'url' pour spécifier l'image */
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la zone */
+    background-position: center; /* Centre l'image dans l'élément */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+  }
+</style>
+
+
+    <!-- Menu -->
+	<center>
+    <table id="bloc-menu" border="1">
+      <tbody>
+        <tr>
+          <th><a href="index.html">Accueil</a></th>
+          <th><a href="page_1.html">Mes productions écrites</a></th>
+          <th><a href="page_2.html">Mes vidéos</a></th>
+          <th><a href="page_3.html">Mes sites préférés</a></th>
+          <th><a href="page_4.html">Mes passions</a></th>
+          <th><a href="page_5.html">Mon site de rêve</a></th>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <!-- Contenu -->
+    <div id="contenu">
+      <h1 style="font-size: 35px; color: #c4b99c; text-align: center; text-decoration: underline;"> Accueil : </h1>
+      <img src="naouhr-chan.jpg" alt="Mon avatar" height="200" width="180">
+	  <!--revenir ici et dire ce que contiens le site -->
+      <h2> Voici mon site : </h2>
+
+      <p style="font-family: 'Oswald', sans-serif; font-size: 30px; font-weight: bold; color: #FFFFFF; line-height: 1;">
+  Je suis Naouhr. J'aime les manga, l'art, la psychologie et l'accent australien.<br>
+  Je partage avec vous mon point de vue sur mes passions</p>
+  
+      <!-- mettre lien musique -->
+<audio id="audio505" src="505.mp3"></audio>
+<div>
+    <a href="javascript:void(0)" onclick="changeState(0)" class="bouton" style= "color: black">PLAY</a>
+    <a href="javascript:void(0)" onclick="changeState(1)" class="bouton" style= "color: black">PAUSE</a>
+    <a href="javascript:void(0)" onclick="changeState(2)" class="bouton" style= "color: black">STOP</a>
+</div>
+
+<script>
+function changeState(x) {
+    let boutons = document.querySelectorAll(".bouton");
+    let audio = document.querySelector("#audio505");
+    boutons.forEach(bouton => bouton.classList.remove("active"));
+    boutons[x].classList.add("active");
+    if (x === 0) {
+        audio.play();
+    } 
+    else if (x === 1) {
+        audio.pause();
+    } 
+    else if (x === 2) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+}
+</script>
+
+</script>
+<br>
+<br>
+<hr>
+     <div id="infos">
+    <h3>A lire aussi :</h3>
+    <ul>
+        <!-- Autres liens ou contenus -->
+       <a href="page_2.html"></a>
+	   <a href="page_2.html#section1"style="color: #6e9d6c; ">Aller à Mes Vidéos</a>
+	   <br>
+
+  <a href="https://actu.fr/loisirs-culture/l-attaque-des-titans-la-derniere-attaque-les-reservations-pour-le-film-au-cinema-sont-ouvertes_62221189.html" target="_blank" style="color: #6e9d6c;">
+    L'Attaque des Titans : The Last Attack</a>.
+</a>
+    </ul>
+   </div>
+  </div>
+ <br>
+     <!-- Pied de page -->
+<div id="pied-de-page" style="background-color: #333333; padding: 10px; color: #e1e1e1; font-family: 'Roboto', sans-serif; font-size: 14px; text-align: center;">
+      <p>
+        Projet SNT - Dernière mise à jour le : 08/03/2025 <br>
+        Les textes et images utilisés n'engagent que son auteur : Naouhr
+      </p>
+    </div>
+
+<br>
+</body>
+</html>

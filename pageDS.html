@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        /* Conteneur principal qui contient les deux rectangles (DB et SM) */
+        .main-container {
+            display: flex; /* Afficher les éléments en ligne */
+            justify-content: flex-start; /* Par défaut, les éléments seront alignés à gauche */
+            gap: 1cm; /* Espace entre les deux rectangles */
+        }
+
+        /* Conteneur principal pour l'image et le texte de DB */
+        .image-text-container {
+            display: flex;
+            flex-direction: column; /* Disposer les éléments en colonne */
+            align-items: center; /* Centrer horizontalement l'image et le texte */
+            gap: 0.5cm; /* Espace de 0,5 cm entre l'image et le texte */
+            background-color: #801f20; /* Fond du rectangle */
+            padding: 20px; /* Espace autour du contenu */
+            border-radius: 10px; /* Coins arrondis du rectangle */
+            max-width: 400px; /* Limite la largeur du conteneur */
+        }
+
+        /* Style de l'image */
+        .image-DB {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        /* Conteneur principal pour l'image et le texte de SM (aligné à droite) */
+        .image-text-container-sm {
+            display: flex;
+            flex-direction: column; /* Disposer les éléments en colonne */
+            align-items: center; /* Centrer horizontalement l'image et le texte à l'intérieur du conteneur */
+            gap: 0.5cm; /* Espace de 0,5 cm entre l'image et le texte */
+            background-color: #801f20; /* Fond du rectangle */
+            padding: 20px; /* Espace autour du contenu */
+            border-radius: 10px; /* Coins arrondis du rectangle */
+            max-width: 400px; /* Limite la largeur du conteneur */
+            margin-left: auto; /* Aligner le conteneur à droite */
+        }
+
+        /* Style de l'image */
+        .image-SM {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        /* Centrer le titre */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Style du texte à côté de l'image */
+        .text-content {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center; /* Centrer le texte sous l'image */
+            max-width: 500px; /* Limite la largeur du texte */
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Contenu principal -->
+    <main>
+      <section>
+        <h2 class="section-title">⚡L’Ascension du Manga Moderne : Entre Dynamisme et Haute Précision</h2>
+        
+        <!-- Conteneur pour les rectangles DB et SM alignés côte à côte -->
+        <div class="main-container">
+            <!-- Rectangle NRT (à gauche) -->
+            <div class="image-text-container">
+                <img src="MHA.png" alt="DB" class="image-DB">
+                <p class="text-content">Entre 2010 et 2025, le style des mangas évolue vers un niveau de détail toujours plus poussé, avec des traits plus fins et une attention particulière aux ombrages et textures.</p>
+            </div>
+
+            <!-- Rectangle NANA (aligné à droite) -->
+            <div class="image-text-container-sm">
+                <img src="JJK.jpg" alt="SM" class="image-SM">
+                <p class="text-content">L’influence du numérique permet aux mangakas de peaufiner leurs planches avec plus de précision et de dynamisme, donnant naissance à des œuvres au rendu visuel plus percutant.</p>
+            </div>
+        </div>
+      </section>
+    </main>
+ 
+
+<br>
+
+
+
+
+
+      <!-- Bouton retour vers "Mes Passions" -->
+      <a href="page_5.html" class="back-button" style="color: #801f20" >Retour à Mon site de rêve</a>
+
+      <!-- Pied de page -->
+      <div id="pied-de-page" style="background-color: #333333; padding: 10px; color: #e1e1e1; font-family: 'Roboto', sans-serif; font-size: 14px; text-align: center;">
+        <p>
+          Projet SNT - Dernière mise à jour le : 08/03/2025 <br>
+          Les textes et images utilisés n'engagent que son auteur : Naouhr
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

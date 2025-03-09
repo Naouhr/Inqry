@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Musiques Préférées</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #801f20; /* Fond rouge pour la page */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #entete-de-page {
+            background-color: #801f20;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #c4b99c;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .audio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .audio-item {
+            background-color: #f4f4f4; /* Rectangles gris clair */
+            color: #333; /* Texte noir pour contraster */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background-color: #801f20;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #6e1617;
+        }
+
+        #pied-de-page {
+            background-color: #333333;
+            color: #e1e1e1;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="entete-de-page">
+        <p><span style="color: #c4b99c;">PORTFOLIO DE NAOUHR</span></p>
+    </div>
+
+    <h1>Mes Musiques Préférées</h1>
+
+    <div class="audio-container">
+        <!-- Rectangle pour Maybe et Bittersweet -->
+        <div class="audio-item">
+            <audio controls>
+                <source src="Maybe.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <audio controls>
+                <source src="bittersweet.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p>En ce moment, j'aime écouter de la K-pop. Je me suis même donné l'objectif ultime d'aller à un concert dans deux ans, le temps de convaincre mes parents et d'être (presque) majeure.</p>
+        </div>
+
+        <!-- Rectangle pour Real Man -->
+        <div class="audio-item">
+            <audio controls>
+                <source src="Real Man.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p>Real Man est une chanson féministe. La chanteuse exprime son mécontentement par rapport à certains comportements des hommes de nos jours avec une phrase clé : "Je suppose que personne ne t'a appris à être un vrai homme". Merci à elle.</p>
+        </div>
+
+        <!-- Rectangle pour He's My Man -->
+        <div class="audio-item">
+            <audio controls>
+                <source src="he's my man.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p>He's My Man a été la musique que j'ai écoutée lorsque je devais faire des recherches sur les obsessions.</p>
+        </div>
+
+        <!-- Rectangle pour Humains (Bonus Track) -->
+        <div class="audio-item">
+            <audio controls>
+                <source src="Humains (Bonus Track).mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p>Humains de Damso. Il s'agit de mon rappeur préféré. Il dit des choses très violentes mais surtout très vraies à propos du racisme, du sexisme, des causes, de l'humanité...</p>
+        </div>
+
+        <!-- Rectangle pour No. 1 Party Anthem -->
+        <div class="audio-item">
+            <audio controls>
+                <source src="No. 1 Party Anthem.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p>No. 1 Party Anthem a été réalisée par Arctic Monkeys, un groupe de musique que j'apprécie particulièrement. Il me fait penser à du soft rock.</p>
+        </div>
+    </div>
+
+    <p> Je n'ai pas vraiment de style musical ; lorsque je découvre une musique, je m'intéresse aux paroles, effets, à la recherche. Et surtout, j'écoute quelques musiques à la fois, et je tourne en boucle avec. J'aime les écouter sur mon lecteur vinyle. </p>
+
+    <a href="page_4.html" class="back-button">Retour à Mes Passions</a>
+   <!-- Pied de page -->
+<div id="pied-de-page" style="background-color: #333333; padding: 10px; color: #e1e1e1; font-family: 'Roboto', sans-serif; font-size: 14px; text-align: center;">
+      <p>
+        Projet SNT - Dernière mise à jour le : 08/03/2025 <br>
+        Les textes et images utilisés n'engagent que son auteur : Naouhr
+      </p>
+    </div>
+
+</body>
+</html>
